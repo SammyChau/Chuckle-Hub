@@ -1,0 +1,20 @@
+{% extends 'Gags/base.html' %}
+
+{% block title %}Joke List{% endblock %}
+
+{% block content %}
+<h1>Dad Joke Collection</h1>
+<div class="joke-controls">
+    <select id="joke-level">
+        <option value="clean">Clean</option>
+        <option value="mild">Mild</option>
+        <option value="dark">Dark</option>
+    </select>
+    <button id="refresh-jokes">Refresh Jokes</button>
+</div>
+<div id="jokes-container">
+    <ul id="joke-list">
+        <li>Loading jokes...</li>
+    </ul>
+</div>
+{% endblock %}

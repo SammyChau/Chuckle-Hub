@@ -1,0 +1,22 @@
+{% extends 'Gags/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to Chuckle Hub</h1>
+<div id="joke-container">
+    <p id="joke">Ready for a laugh? Click the button below!</p>
+    <div id="joke-rating" class="hidden">
+        <p>Rate this joke:</p>
+        <div class="stars">
+            <i class="fas fa-star" data-rating="1"></i>
+            <i class="fas fa-star" data-rating="2"></i>
+            <i class="fas fa-star" data-rating="3"></i>
+            <i class="fas fa-star" data-rating="4"></i>
+            <i class="fas fa-star" data-rating="5"></i>
+        </div>
+    </div>
+</div>
+<button id="get-joke">Get a Dad Joke</button>
+<div id="joke-reaction"></div>
+{% endblock %}
